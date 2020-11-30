@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./lib/three.min.js"></script>
+    <script src="./lib/OrbitControls.js"></script>
+</head>
+<body>
+    <script>
+        let camera, 
+            scene, 
+            renderer, 
+            controls, 
+            container, 
+            rotationPoint,
+            gravity = true;
+
+        const characterSize = 50;
+        const outlineSize = characterSize * 0.05;
+
+        const objects = [];
+
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+
+        // Store movements.
+        let movements = [];
+
+        let player;
+        let bollets = [];
+        let cubes = [];
+        let cube;
+        let cube2;
+
+
+    </script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./event.js"></script>
+</body>
+</html>
